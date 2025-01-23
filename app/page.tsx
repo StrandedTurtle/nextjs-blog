@@ -37,13 +37,13 @@ export default function Home() {
   const [pokemon, setPokemon] = useState<Pokemon[]>([]);
   const [nextUrl, setNextUrl] = useState('');
   const [prevUrl, setPrevUrl] = useState('');
-  const [loading, setLoading] = useState(true);
+  
   const initialUrl = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=0';
 
   useEffect(() => {fetchData(initialUrl)},[]);
 
   const fetchData = async (url: string) => {
-    setLoading(true);
+    
     const response = await fetch(url)
     const data = await response.json()
     const detailedPokemon = data.results.map(async (pokemon: { url: string }) => {
@@ -74,7 +74,7 @@ export default function Home() {
     setPokemon(detailedPokemonData)
     setNextUrl(data.next)
     setPrevUrl(data.previous)
-    setLoading(false)
+    
 
   }
     
