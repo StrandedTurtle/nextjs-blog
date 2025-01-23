@@ -122,9 +122,9 @@ export default function Home() {
   
 
   return (
-    
+    <Suspense>
     <main>
-      <Suspense>
+      
       <div className="flex h-[80px] items-center pl-[80px]">        
           <h3 className="text-forloop-text-primary text-left">Pokémon Browser</h3>              
       </div>
@@ -253,9 +253,9 @@ export default function Home() {
       <h4 className="flex text-forloop-text-primary w-full py-10 text-center">Thank you for using Pokémon Browser!</h4>
       </div>
       </footer>
-      </Suspense>
+      
     </main>
-    
+    </Suspense>
   );
 
   
