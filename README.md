@@ -6,7 +6,7 @@ To test the project yourself, you need to:
 
 1. Have Node.js installed on your PC
 2. Download the repository and extract the files
-3. CD into the my-app folder with command prompt
+3. CD into the nextjs-pokemon-browser folder with command prompt (or right click >> open in terminal in windows exlplorer)
 4. Type "npm run dev"
 5. Open [http://localhost:3000](http://localhost:3000) with your browser
 6. Enjoy!
