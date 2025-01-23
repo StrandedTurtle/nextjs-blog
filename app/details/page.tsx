@@ -11,7 +11,7 @@ import { ChevronLeft } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+
 
 
 
@@ -122,7 +122,7 @@ export default function Home() {
   
 
   return (
-    <Suspense>
+    
     <main>
       
       <div className="flex h-[80px] items-center pl-[80px]">        
@@ -255,7 +255,7 @@ export default function Home() {
       </footer>
       
     </main>
-    </Suspense>
+    
   );
 
   
