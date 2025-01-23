@@ -2,12 +2,12 @@
 
 import { Separator } from "@radix-ui/react-separator";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Progress } from "@/components/ui/progress";
 
-import { ChevronLeft, Weight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 import { useSearchParams } from "next/navigation";
